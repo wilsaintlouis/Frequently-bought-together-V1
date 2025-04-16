@@ -56,4 +56,39 @@ If you haven’t added the FBT section files to your theme yet, let’s do that 
    - Under **Sections**, click **Add a New Section** and name it `frequently-bought-together`. Copy the `frequently-bought-together.liquid` file content into it (you’ll need the section code from the developer who built this—or I can provide it if you need it).
    - Under **Assets**, click **Add a New Asset** and upload the `fbt-section.js` file. This handles the dynamic updates and add-to-cart functionality.
 4. Save both files.
+## Step 5: Add the CSS File for Styling
+Let’s add the CSS file that styles the FBT section. This will control how the section looks—like the layout, spacing, and toast notifications.
 
+1. In your Shopify admin, go to **Online Store** > **Themes**.
+2. Find your active theme and click **Actions** > **Edit Code**.
+3. In the code editor, under **Assets**, click **Add a New Asset**.
+4. Choose **Create a Blank File**, name it `fbt-section.css`, and select `.css` as the file type.
+5. Open the `fbt-section.css` file you just created.
+6. Go to the repository 
+7. In the repo, locate the `fbt-section.css` file, copy all the CSS code inside it, and paste it into the `fbt-section.css` file in your Shopify theme.
+8. Save the file.
+
+
+## Step 6: Apply a Custom Color Scheme (Optional)
+If you want to match the FBT section to your store’s branding, you can apply a custom color scheme (Scheme 6). This step is optional since the `fbt-section.css` file already provides basic styling.
+
+### Add the Color Scheme to Your Theme
+First, we need to add Scheme 6 to your theme’s settings if it’s not already there.
+
+1. In your Shopify admin, go to **Online Store** > **Themes**.
+2. Find your active theme and click **Actions** > **Edit Code**.
+3. In the code editor, open the `config/settings_data.json` file.
+4. Look for the `"color_schemes"` section. You should see entries like `scheme-1`, `scheme-2`, etc.
+5. Add the following Scheme 6 if it’s not already there (or update it to match these values):
+   ```json
+   "scheme-6": {
+     "settings": {
+       "background": "#F5E8E4",
+       "background_gradient": "",
+       "text": "#2A2A2A",
+       "button": "#D55F7A",
+       "button_label": "#FFFFFF",
+       "secondary_button_label": "#2A2A2A",
+       "shadow": "#0000001A"
+     }
+   }
