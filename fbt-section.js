@@ -1,6 +1,6 @@
 // Wait until the page’s HTML is fully loaded before running our code
 document.addEventListener('DOMContentLoaded', () => {
-    // Let’s look for any FBT sections on the page (we might have more than one)
+    // Let’s look for any FBT sections on the page (limit set to 1 in schema, will have to change or remove to add more of this section)
     const sections = document.querySelectorAll('[data-section-id][data-product-handle]');
     
     // Check if we found any FBT sections, if not, let’s stop here
