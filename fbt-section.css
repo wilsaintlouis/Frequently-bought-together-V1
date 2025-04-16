@@ -1,0 +1,166 @@
+.fbt-shopify-section {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+background-color: rgb(var(--color-background)); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.fbt-heading {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--color-foreground);
+}
+
+.fbt-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fbt-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+background-color: rgb(var(--color-background)); 
+}
+
+.fbt-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fbt-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.fbt-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+  color: var(--color-foreground);
+}
+
+.fbt-price {
+  font-size: 12px;
+  color: var(--color-foreground-secondary);
+  margin: 0;
+}
+
+.fbt-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.fbt-plus {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-foreground-secondary);
+  margin: 0 10px;
+}
+
+.fbt-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid var(--color-border);
+}
+
+.fbt-total {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-foreground);
+}
+
+.fbt-total-price {
+  color: var(--color-accent);
+}
+
+.fbt-actions {
+  margin: 0;
+}
+
+.fbt-add-to-cart {
+  background-color: rgb(var(--color-button)); 
+  color:  rgb(var(--color-button-text));
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+ transition: all .2s ease-in-out;
+}
+
+.fbt-add-to-cart:hover {
+  transform: scale(1.1);
+}
+
+
+.fbt-placeholder,
+.fbt-empty {
+  text-align: left;
+  color: var(--color-foreground-secondary);
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.fbt-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  color: var(--color-button-text);
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.fbt-toast.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .fbt-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .fbt-card {
+    width: 100%;
+    padding: 10px;
+  }
+  .fbt-plus {
+    margin: 5px 0;
+  }
+  .fbt-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .fbt-add-to-cart {
+    width: 100%;
+    text-align: center;
+  }
+}
